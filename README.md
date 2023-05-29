@@ -1,9 +1,11 @@
-# Ex-09-Data-Visualization-
+# Ex-09 Data Visualization-2
 
 ## AIM
+
 To Perform Data Visualization on a complex dataset and save the data to a file. 
 
 # Explanation
+
 Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to see and understand trends, outliers, and patterns in data.
 
 # ALGORITHM
@@ -15,7 +17,6 @@ Clean the Data Set using Data Cleaning Process
 Apply Feature generation and selection techniques to all the features of the data set
 ### STEP 4
 Apply data visualization techniques to identify the patterns of the data.
-
 
 # CODE
 
@@ -55,19 +56,13 @@ plt.title("Dataset after removing outliers")
 
 df.boxplot()
 
-plt.show()
-
 sns.barplot(x=df['day'], y=df['total_bill'])
 
 plt.title("Highest Total Bill Amount by day")
 
-plt.show()
-
 sns.boxplot(x=df['smoker'], y=df['tip'],hue=df['smoker'])
 
 plt.title("Average Tip Amount given by smokers and non-smokers")
-
-plt.show()
 
 df["tip_percent"] = df["tip"] / df["total_bill"]
 
@@ -75,59 +70,38 @@ sns.barplot(x=df['size'],y=df['tip_percent'],data=df)
 
 plt.title("Tip Percentage by Dining Party Size")
 
-plt.show()
-
-
 sns.barplot(x=df['sex'], y=df['tip'])
 
 plt.title("Highest tips based on gender")
 
-plt.show()
-
 sns.barplot(x=df['day'],y=df['total_bill'])
 
-
 plt.title("Total bill amount by day of the week")
-
-plt.show()
 
 sns.histplot(data=df, x="total_bill", hue="time", element="step", stat="density")
 
 plt.title("Distribution of Total Bill Amounts by Time of Day")
 
-plt.show()
-
 sns.barplotdata=df,(x=df['size'],y=df['total_bill'])
 
 plt.title("Average Total Bill Amount by Dining Party Size")
-
-plt.show()
 
 sns.violinplot(x="day", y="tip", data=df)
 
 plt.title("Tip Amount by Day of Week")
 
-plt.show()
-
 sns.barplot(x="time", y="tip", data=df)
 
-
 plt.title("Tip Amount by Time of Day")
-
-plt.show()
 
 sns.scatterplot(x="total_bill", y="tip", data=df)
 
 plt.title("Correlation between Tip Amount and Total Bill Amount")
 
-plt.show()
-
-
-
-
 # OUPUT
 
 ![op1](https://github.com/Thirisaa/Ex-08-Data-Visualization_1/assets/112301582/16739396-95f5-4718-a12e-880819742785)
+
 ![op2](https://github.com/Thirisaa/Ex-08-Data-Visualization_1/assets/112301582/dae48bff-8de6-4e08-84dd-61e4f14a7eb0)
 ![op3](https://github.com/Thirisaa/Ex-08-Data-Visualization_1/assets/112301582/7ba5c454-d644-4cf0-b411-7b5e0485c846)
 ![op4](https://github.com/Thirisaa/Ex-08-Data-Visualization_1/assets/112301582/96d1bb76-d76f-42e5-b08d-dc0e4a031048)
